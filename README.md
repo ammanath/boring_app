@@ -6,4 +6,4 @@
 PS C:\working\FlutterProjs\hn_app> git remote -v
 origin  https://github.com/bit00/boring_app.git (fetch)
 origin  https://github.com/bit00/boring_app.git (push)
-PS C:\working\FlutterProjs\hn_app> git remote set-url origin https://github.com/ammanath/hn_app.git
+PS C:\working\FlutterProjs\hn_app> git remote set-url origin https://github.com/ammanath/boring_app.git
