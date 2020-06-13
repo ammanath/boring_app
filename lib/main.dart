@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hn_app/src/article.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main()=>runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -40,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onRefresh: () async {
           await Future.delayed(const Duration(seconds: 2));
           setState(() {
-          _articles.removeAt(0);  
+          _articles?.removeAt(0);  
           });
           return;
         },
