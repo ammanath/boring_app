@@ -7,3 +7,10 @@ PS C:\working\FlutterProjs\hn_app> git remote -v
 origin  https://github.com/bit00/boring_app.git (fetch)
 origin  https://github.com/bit00/boring_app.git (push)
 PS C:\working\FlutterProjs\hn_app> git remote set-url origin https://github.com/ammanath/boring_app.git
+
+# To run the tests  
+flutter run test/widget_test.dart  
+//To run tests without the emulator
+PS C:\working\FlutterProjs\hn_app> flutter test
+//To run tests on the emulator
+PS C:\working\FlutterProjs\hn_app> flutter run .\test\widget_test.dart

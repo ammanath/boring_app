@@ -1,150 +1,32 @@
 class Article{
   final String text;
-  final String domain;
+  final String url;
   final String by;
-  final String age;
+  final int time;
   final int score;
-  final int commentsCount;
 
   const Article(
     {this.text,
-    this.domain,
+    this.url,
     this.by,
-    this.age,
+    this.time,
     this.score,
-    this.commentsCount,}
+    }
   );
+
+  factory Article.fromJson(Map<String, dynamic> json ){
+    if(json==null) return null;
+
+    return Article(
+      text:json['text'] ?? '[null',
+      url:json['url'],
+      by:json['by'],
+      time:json['time'],
+      score:json['score'],
+    );
+    
+  }
+
 }
 
-  final articles = [
-    new Article(
-      text:"Circualr Shock Acoustic Waves in Ionosphere",
-      domain:"wiley.com",
-      by:"zdw",
-      age: "3 hours",
-      score : 177,
-      commentsCount: 64,
-    ),
-    new Article(
-      text:"Better Faster Safer Happier Cheaper",
-      domain:"smart.com",
-      by:"jonsmart",
-      age: "2 hours",
-      score : 17,
-      commentsCount: 264,
-    ),
-    new Article(
-      text:" Shock Acoustic Waves in Ionosphere",
-      domain:"wiley.com",
-      by:"zdw",
-      age: "3 hours",
-      score : 177,
-      commentsCount: 64,
-    ),
-    new Article(
-      text:"Better Faster Safer Happier Cheaper",
-      domain:"smart.com",
-      by:"jonsmart",
-      age: "2 hours",
-      score : 17,
-      commentsCount: 264,
-    ),
-    new Article(
-      text:"Circualr Shock Acoustic Waves in Ionosphere",
-      domain:"wiley.com",
-      by:"zdw",
-      age: "3 hours",
-      score : 177,
-      commentsCount: 64,
-    ),
-    new Article(
-      text:"Better Faster Safer Happier Cheaper",
-      domain:"smart.com",
-      by:"jonsmart",
-      age: "2 hours",
-      score : 17,
-      commentsCount: 264,
-    ),
-    new Article(
-      text:"Circualr Shock Acoustic Waves in Ionosphere",
-      domain:"wiley.com",
-      by:"zdw",
-      age: "3 hours",
-      score : 177,
-      commentsCount: 64,
-    ),
-    new Article(
-      text:"Better Faster Safer Happier Cheaper",
-      domain:"smart.com",
-      by:"jonsmart",
-      age: "2 hours",
-      score : 17,
-      commentsCount: 264,
-    ),
-    new Article(
-      text:"Circualr Shock Acoustic Waves in Ionosphere",
-      domain:"wiley.com",
-      by:"zdw",
-      age: "3 hours",
-      score : 177,
-      commentsCount: 64,
-    ),
-    new Article(
-      text:"Better Faster Safer Happier Cheaper",
-      domain:"smart.com",
-      by:"jonsmart",
-      age: "2 hours",
-      score : 17,
-      commentsCount: 264,
-    ),
-    new Article(
-      text:"Circualr Shock Acoustic Waves in Ionosphere",
-      domain:"wiley.com",
-      by:"zdw",
-      age: "3 hours",
-      score : 177,
-      commentsCount: 64,
-    ),
-    new Article(
-      text:"Better Faster Safer Happier Cheaper",
-      domain:"smart.com",
-      by:"jonsmart",
-      age: "2 hours",
-      score : 17,
-      commentsCount: 264,
-    ),
-    new Article(
-      text:"Circualr Shock Acoustic Waves in Ionosphere",
-      domain:"wiley.com",
-      by:"zdw",
-      age: "3 hours",
-      score : 177,
-      commentsCount: 64,
-    ),
-    new Article(
-      text:"Better Faster Safer Happier Cheaper",
-      domain:"smart.com",
-      by:"jonsmart",
-      age: "2 hours",
-      score : 17,
-      commentsCount: 264,
-    ),
-    new Article(
-      text:"Circualr Shock Acoustic Waves in Ionosphere",
-      domain:"wiley.com",
-      by:"zdw",
-      age: "3 hours",
-      score : 177,
-      commentsCount: 64,
-    ),
-    new Article(
-      text:"Better Faster Safer Happier Cheaper",
-      domain:"smart.com",
-      by:"jonsmart",
-      age: "2 hours",
-      score : 17,
-      commentsCount: 264,
-    ),
-
-  ];
-
+  
