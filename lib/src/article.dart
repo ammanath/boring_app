@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 class Article{
   final String text;
   final String url;
@@ -18,13 +20,12 @@ class Article{
     if(json==null) return null;
 
     return Article(
-      text:json['text'] ?? '[null',
+      text:json['text'] ?? 'null',
       url:json['url'],
       by:json['by'],
       time:json['time'],
       score:json['score'],
     );
-    
   }
 
 }

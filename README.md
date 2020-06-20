@@ -1,6 +1,8 @@
 # hn_app  
 - Flutter project built by following the instructions from the Boring Flutter Show  
 - https://www.youtube.com/watch?v=yr8F2S3Amas&list=PLOU2XLYxmsIK0r_D-zWcmJ1plIcDNnRkK&index=1  
+- Source Gen
+- built_value - immutable value types
 
 # repointed git to renamed root
 PS C:\working\FlutterProjs\hn_app> git remote -v
