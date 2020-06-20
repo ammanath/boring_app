@@ -3,6 +3,8 @@
 - https://www.youtube.com/watch?v=yr8F2S3Amas&list=PLOU2XLYxmsIK0r_D-zWcmJ1plIcDNnRkK&index=1  
 - Source Gen
 - built_value - immutable value types
+- boiler plate snippet for VSCODE: https://github.com/google/built_value.dart/issues/562
+
 
 # repointed git to renamed root
 PS C:\working\FlutterProjs\hn_app> git remote -v
