@@ -1,6 +1,8 @@
 import 'dart:convert';
 
+import 'package:built_value/serializer.dart';
 import 'package:hn_app/src/article.dart';
+import 'package:hn_app/src/serializers.dart';
 
 List<int> parseTopStories(String jsonString){
   final parsed = jsonDecode(jsonString);
@@ -10,6 +12,7 @@ List<int> parseTopStories(String jsonString){
 
 Article parseArticle(String jsonString){
   final parsed = jsonDecode(jsonString);
-  Article article = Article.fromJson(parsed);
+  Article article = serializers.deserializeWith(Article.serializer, parsed);
   return article;
 }
+

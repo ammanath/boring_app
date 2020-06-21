@@ -18,3 +18,8 @@ flutter run test/widget_test.dart
 PS C:\working\FlutterProjs\hn_app> flutter test
 //To run tests on the emulator
 PS C:\working\FlutterProjs\hn_app> flutter run .\test\widget_test.dart
+
+# To create built_values
+flutter packages pub run build_runner build
+flutter packages pub run build_runner watch
+
