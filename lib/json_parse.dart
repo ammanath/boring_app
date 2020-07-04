@@ -12,7 +12,7 @@ List<int> parseTopStories(String jsonString){
 
 Article parseArticle(String jsonString){
   final parsed = jsonDecode(jsonString);
-  Article article = serializers.deserializeWith(Article.serializer, parsed);
+  Article article = standardSerializers.deserializeWith(Article.serializer, parsed);
   return article;
 }
 
